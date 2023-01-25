@@ -1,0 +1,9 @@
+CREATE VIEW maior AS
+SELECT a.nome_aluno, a.matricula, c.curso
+FROM aluno a
+INNER JOIN curso c on a.idade > 40 && a.id_curso=c.id_curso;
+
+CREATE VIEW menor AS
+SELECT a.nome_estudante, a.matriculados, c.cursantes
+FROM aluno a
+INNER JOIN curso c on a.idade < 40 && a.id_curso=c.id_curso;
